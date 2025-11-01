@@ -1,0 +1,23 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+
+[[redirects]]
+  from = "/home"
+  to = "/.netlify/functions/api/home"
+  status = 200
+
+[[redirects]]
+  from = "/github"
+  to = "/.netlify/functions/api/github"
+  status = 200
+
+[[redirects]]
+  from = "/ytb"
+  to = "/.netlify/functions/api/ytb"
+  status = 200
+
+[[redirects]]
+  from = "/token"
+  to = "/.netlify/functions/api/token"
+  status = 200
